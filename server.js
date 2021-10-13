@@ -48,10 +48,6 @@ io.on('connect', (socket) => {
     })
 })
 
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('client/'))
-}
-
 http.listen(PORT, () => {
     console.log(`SERVER IS RUNNING ON PORT ${PORT}`)
 })
